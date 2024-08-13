@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Vite App</title>
+  </head>
+  <body class=" bg-red-100 max-w-screen-xl mx-auto px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+    <main class="lg:flex lg:justify-between lg:gap-4">
+      <section class="lg:w-3/4 mt-6 mb-10">
+        <h2 class="font-semibold text-3xl pb-2">Desserts</h2>
+          <ul id="productos" class="grid lg:grid-cols-3 lg:grid-rows-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-6">
+             <!--se inyecto el la lista de productos(data.json) dinamicamento con el DOM -->
+          </ul>
+      </section>
+      <section class=" lg:w-1/4 mt-6 ">
+        <article class="bg-white rounded-lg">
+          <h3 class="p-4 text-red-500 font-semibold text-xl">Your Cart<span>(4)</span></h3>
+          <div id="carrito" class="flex justify-center items-center flex-col  p-4 rounded-lg ">
+            <ul id="lista-carrito" class=" pl-5">
+  
+            </ul>
+            <p id="orden-total" class="font-semibold mt-4 text-lg text-gray-800  ">Orden Total: $0.00</p>
+            <button id="confirmar-orden" class="bg-red-500 flex items-center justify-center text-white px-4 py-2 rounded mt-4">Confirmar Orden</button>
+          </div>
+        </article>
+        <!-- <article class="bg-white rounded pb-2">
+          <h3 class="p-4 text-red-500 font-semibold text-xl">Your Cart<span>(4)</span></h3>
+          <div class="flex items-center justify-center flex-col">
+            <img class="" src="/assets/images/illustration-empty-cart.svg" alt="">
+            <p class="text-xs text-stone-800 font-medium  ">Your added items will appear here</p>
+          </div>
+        </article> -->
+      </section>
+
+      <aside>
+        <div>
+          <h2 class="p-4 text-red-500 font-semibold text-xl">Order Confirmed<img src="/assets/images/icon-order-confirmed.svg" alt="order confirmed"></h2>
+          <p class="text-xs text-stone-700 font-medium">we hope you enjoy your food!</p>
+          <ul id="confirmed" class="">
+
+          </ul>
+          <button id="confirmar-orden" class="bg-red-500 flex items-center justify-center text-white px-4 py-2 rounded mt-4">Stard New Order</button>
+        </div>
+      </aside>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
